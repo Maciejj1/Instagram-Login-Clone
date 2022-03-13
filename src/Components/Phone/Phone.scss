@@ -1,0 +1,36 @@
+.slide-container {
+  width: 90%;
+  position: absolute;
+  top: -20%;
+  right: 165%;
+  .each-fade img {
+    width: 300px;
+    height: auto;
+    z-index: 99;
+    position: absolute;
+    object-fit: cover;
+    vertical-align: top;
+    margin-top: 20px;
+    left: 62%;
+  }
+  .each-fade {
+    width: 0%;
+  }
+  .iphone {
+    width: 690px;
+  }
+  .slide-container img {
+    height: 300px;
+    height: auto;
+  }
+  .iphone2 {
+    width: 800px;
+    right: 45%;
+    top: -800px;
+    z-index: -1;
+
+    position: relative;
+    object-fit: cover;
+    vertical-align: top;
+  }
+}

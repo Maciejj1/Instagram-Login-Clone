@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+
+.login-form-container {
+  width: 100%;
+  height: auto;
+}
+
+.login-form-base {
+  background-color: #ffffff;
+  position: relative;
+  width: 350px;
+  border: 1px solid grey;
+  height: 300px;
+  left: 50%;
+  top: 100px;
+  justify-content: center;
+
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  input {
+    width: 60%;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid grey;
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 10px;
+    width: 60%;
+    height: 30px;
+    background-color: rgb(49, 179, 255);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+}
+.login-form-login-to-register {
+  background-color: #ffffff;
+  position: absolute;
+  width: 350px;
+  top: 104%;
+  height: 350px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.login-form-download-app {
+  position: absolute;
+  top: 120%;
+  img {
+    width: 50%;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+.info-links {
+  position: relative;
+  top: 500px;
+  width: 50%;
+}
+.facebook-link {
+  position: relative;
+  bottom: 14px;
+}
+a {
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+}
+.facebook-picture {
+  width: 40px;
+}
+.login-form-facebook-link {
+  position: relative;
+  bottom: 20px;
+  a {
+    color: rgb(0, 102, 255);
+    font-weight: 200;
+  }
+}
