@@ -3,16 +3,15 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDUchy24M_i6MiHVfuBKBQHm0YRMoRLmts",
-  authDomain: "mysaving-b9bfe.firebaseapp.com",
-  databaseURL:
-    "https://mysaving-b9bfe-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "mysaving-b9bfe",
-  storageBucket: "mysaving-b9bfe.appspot.com",
-  messagingSenderId: "901797471220",
-  appId: "1:901797471220:web:465fa4a299c5b5181d0fa1",
-  measurementId: "G-73B7ZXPYN5",
+  apiKey: "AIzaSyCIPwdRnBW5NrctRmQ149o2WVUgnNmUIdQ",
+  authDomain: "instagram-task-37102.firebaseapp.com",
+  projectId: "instagram-task-37102",
+  storageBucket: "instagram-task-37102.appspot.com",
+  messagingSenderId: "277918127386",
+  appId: "1:277918127386:web:799f5589274c9c197388a3",
+  measurementId: "G-8YXVVH978F",
 };
+
 firebase.initializeApp(firebaseConfig);
 const GoogleAuth = new firebase.auth.GoogleAuthProvider();
 const auth = firebase.auth();
