@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { auth, db } from "../FirebaseConfig/Config";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import insta from "../../assets/insta.png";
+import Phonee from "../Phone/Phone";
 import "./Register.scss";
 
 function setError(message) {
@@ -39,21 +41,19 @@ const RegisterForm = (props) => {
     console.log("Działa");
   };
   return (
-    <div className="register-form-conatiner">
-      <div className="register-form-base">
-        <form
-          autoComplete="off"
-          className="register-form-group"
-          onSubmit={Register}
-        >
-          <div className="registerform-title">
-            <h2>MySaving</h2>
-          </div>
+    <div className="login-form-container">
+      <div className="login-form-base">
+        <div className="phone-picture">
+          <Phonee />
+        </div>
+
+        <form className="login-form" autoComplete="off" onSubmit={Register}>
+          <img src={insta} />
           <label htmlFor="name" />
           <input
-            type="text"
-            className="register-form-name"
+            type="name"
             placeholder="Nazwa"
+            className="login-form-email"
             required
             onChange={(e) => setName(e.target.value)}
             value={name}
@@ -62,8 +62,9 @@ const RegisterForm = (props) => {
           <label htmlFor="email" />
           <input
             type="email"
-            className="register-form-email"
-            placeholder="Email"
+            placeholder="Podaj email"
+            className="login-form-email"
+            required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -71,27 +72,27 @@ const RegisterForm = (props) => {
           <label htmlFor="password" />
           <input
             type="password"
-            className="register-form-password"
-            placeholder="Hasło"
+            placeholder="Podaj hasło"
+            className="login-form-password"
+            required
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
-
           <br />
-          <button type="submit" className="register-form-register-button">
-            Rejestruj
+          <button type="submit" className="login-submit-button">
+            Zarejestruj się
           </button>
-
-          <br />
-          <div className="register-form-link-to-login">
-            <span className="register-form-link-to-login">Masz już konto?</span>
-            <br />
-            <Link to="/login" className="login-form-register">
-              Zaloguj
-            </Link>
-          </div>
         </form>
-      </div>
+
+        <div className="login-form-login-to-register">
+          <div className="invitation-to-register">
+            <p className="register-text">Masz konto?</p>
+            <a className="to-register" href="/login">
+              Zaloguj się
+            </a>
+          </div>
+        </div>
+      </div>{" "}
     </div>
   );
 };

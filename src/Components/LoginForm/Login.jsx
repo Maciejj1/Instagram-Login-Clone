@@ -84,28 +84,32 @@ const Login = () => {
           </button>
           <p>LUB</p>
 
-          <button
-            onClick={signInWithGoogle}
-            className="login-form-login-google"
-          >
+          <div onClick={signInWithGoogle} className="login-form-login-google">
             <img src={gugol} className="loginform-google-icon" />
-          </button>
+          </div>
         </form>
 
         <div className="login-form-login-to-register">
-          <p>Nie masz konta?</p>
-          <a href="/register">Zarejestruj się</a>
+          <div className="invitation-to-register">
+            <p className="register-text">Nie masz konta?</p>
+            <a className="to-register" href="/register">
+              Zarejestruj się
+            </a>
+          </div>
         </div>
+
         <div className="login-form-download-app">
           <p>Pobierz aplikację.</p>
-          <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo">
-            <img src={apple} />
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=53A4CCA9-5E8B-4FBC-B133-16A81CA004C0&utm_content=lo&utm_medium=badge">
-            <img src={google} />
-          </a>
+          <div className="login-form-download">
+            <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo">
+              <img src={apple} />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=53A4CCA9-5E8B-4FBC-B133-16A81CA004C0&utm_content=lo&utm_medium=badge">
+              <img src={google} />
+            </a>
+          </div>
         </div>
-      </div>
+      </div>{" "}
       <img src={info} className="info-links" />
     </div>
   );

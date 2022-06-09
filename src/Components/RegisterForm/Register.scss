@@ -1,115 +1,121 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
-.register-form-container {
-  width: 100%;
-  height: auto;
-}
-.registerform-logo {
-  float: left;
-  margin-right: 45px;
-  margin-top: 10px;
-}
-.registerform-title h2 {
-  font-size: 48px;
-  margin-top: 30px;
-  float: left;
-  background-image: linear-gradient(#00538a 60%, #a8dedd);
-  background-clip: text;
-  color: transparent;
-}
-.register-form-group {
-  display: inline-block;
 
-  height: 420px;
-}
-
-.register-form-email {
-  border: none;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  height: 40px;
-  border-radius: 10px;
-  color: white;
-  outline: none;
-  margin-top: 10px;
-  outline-width: 0;
-  background-color: #7fc2d8;
-}
-.register-form-password {
-  margin-top: 10px;
-  border: none;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  height: 40px;
-  border-radius: 10px;
-  outline: none;
-
-  color: white;
-  outline-width: 0;
-  background-color: #7fc2d8;
-}
-.register-form-name {
-  margin-top: 10px;
-  border: none;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  height: 40px;
-  border-radius: 10px;
-  outline: none;
-
-  color: white;
-  outline-width: 0;
-  background-color: #7fc2d8;
-}
-.register-form-register-button {
-  margin-top: 20px;
-  border: none;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  height: 40px;
-  border-radius: 40px;
-  outline: none;
-  color: white;
-  outline-width: 0;
-  background-color: #00538a;
-}
-::placeholder {
-  color: white;
-  margin-left: 200px;
-}
-
-p {
-  font-size: 20px;
-  margin-top: 8px;
-}
-.register-form-register-button:hover {
-  background-color: #4f86ec;
-  cursor: pointer;
-}
-
-.register-form-login {
-  font-size: 30px;
-  text-decoration: none;
-  color: #00538a;
-}
-.register-form-link-to-login {
-  margin-top: 7px;
-}
-.register-form-base {
-  background-color: #eeeeee;
-  position: absolute;
-  width: 400px;
-  top: 50%;
-  left: 40%;
-  transform: translateY(-50%);
-  height: 350px;
-  border-radius: 6%;
+.login-form-container {
   display: flex;
-  justify-content: center;
-  height: auto;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form-base {
+  top: 130px;
+  left: 130px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  width: 400px;
+  border: 1px solid #9c9ca6e4;
+  height: 100%;
   font-family: "Roboto Condensed", sans-serif;
+  input {
+    width: 60%;
+    height: 30px;
+    margin: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid grey;
+  }
+  .login-submit-button {
+    width: 60%;
+    height: 30px;
+    background-color: rgb(49, 179, 255);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+}
+.login-form-login-to-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 400px;
+  height: 100%;
+  margin-top: 30px;
+  border: 1px solid grey;
+  font-family: "Roboto Condensed", sans-serif;
+
+  .invitation-to-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+  }
+
+  .register-text {
+    font-size: 18px;
+  }
+
+  .to-register {
+    font-size: 18px;
+  }
+}
+
+.login-form-download-app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .login-form-download {
+    img {
+      width: 50%;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+.info-links {
+  width: 50%;
+}
+.facebook-link {
+  bottom: 14px;
+}
+a {
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+}
+.facebook-picture {
+  width: 40px;
+}
+.login-form-facebook-link {
+  a {
+    color: rgb(0, 102, 255);
+    font-weight: 200;
+  }
+}
+.loginform-google-icon {
+  width: 100%;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form-login-google {
+  width: 60%;
+}
+.phone-picture {
+  position: relative;
+}
+.info-links {
+  width: 50%;
+  position: relative;
+  top: 200px;
 }

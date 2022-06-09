@@ -1,19 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
-
+@media screen and (max-width: 700px){
+  .login-form-container{
+    width: 50%;
+display: flex;
+align-items: center;
+  }
+  .phone-picture{
+    display: none;
+  }
+}
+@media screen and (min-width: 701px){
 .login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .login-form-base {
+  top: 130px;
+  left: 130px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background-color: #ffffff;
-  width: 350px;
-  border: 1px solid grey;
+  width: 400px;
+  border: 1px solid #9c9ca6e4;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   input {
     width: 60%;
     height: 30px;
+    margin: 4px;
     border-radius: 4px;
     outline: none;
     border: 1px solid grey;
@@ -30,19 +49,45 @@
   }
 }
 .login-form-login-to-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
-  width: 350px;
+  width: 400px;
   height: 100%;
+  margin-top: 30px;
   border: 1px solid grey;
   font-family: "Roboto Condensed", sans-serif;
+
+  .invitation-to-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+  }
+
+  .register-text {
+    font-size: 18px;
+  }
+
+  .to-register {
+    font-size: 18px;
+  }
 }
 
 .login-form-download-app {
-  img {
-    width: 50%;
-  }
-  p {
-    font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .login-form-download {
+    img {
+      width: 50%;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 }
 .info-links {
@@ -68,6 +113,20 @@ a {
 .loginform-google-icon {
   width: 100%;
 }
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .login-form-login-google {
   width: 60%;
+}
+.phone-picture {
+  position: relative;
+}
+.info-links {
+  width: 50%;
+  position: relative;
+  top: 200px;
+}
 }
